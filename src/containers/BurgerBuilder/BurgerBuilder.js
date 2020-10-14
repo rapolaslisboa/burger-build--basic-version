@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Burger from '../../components/Burger/Burger';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
-import Aux from '../../hoc/Auxiliary';
+import Aux from '../../hoc/Auxiliary/Auxiliary';
 import Modal from '../../components/UI/Modal/Modal';
 import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary';
 
@@ -83,9 +83,7 @@ class BurgerBuilder extends Component {
         const disabledInfo = {
             ...this.state.ingredients
         };
-        console.log('DisabledInfo', disabledInfo);
         for (let key in disabledInfo) {
-            console.log('disabledInfo[key]', disabledInfo[key]);
             disabledInfo[key] = disabledInfo[key] <= 0
         }
         return (
