@@ -3,7 +3,7 @@ import Aux from '../../../hoc/Auxiliary/Auxiliary';
 import Button from '../../UI/Button/Button';
 
 class OrderSummary extends Component {
-    // Isso poderia ser um componente funcional e não necessariamenteprecisa ser uma classe
+    // Isso poderia ser um componente funcional e não necessariamente precisa ser uma classe
     componentWillUpdate() {
         
     }
